@@ -1,4 +1,5 @@
 import './App.css'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import UseState from './Components/UseState'
 import UseEffect from './Components/UseEffect'
 import UseCallback from './Components/UseCallback'
@@ -9,9 +10,16 @@ import CTPDP from './Components/ChildToParentDataPassing/CTPDP'
 function App() {
 
   return (
-    <>
-      <CTPDP/>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<UseState />} />
+        <Route path="/useeffect" element={<UseEffect />} />
+        <Route path="/usecalback" element={<UseCallback />} />
+        <Route path="/usememo" element={<UseMemo />} />
+        <Route path="/p2c" element={<PTCDP />} />
+        <Route path="/c2p" element={<CTPDP />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 
