@@ -2,11 +2,10 @@ import React from 'react'
 import Demo1 from './Demo1'
 
 function PTCDP() {
-  let age = 28
+  let val='Roshan'
   return (
     <div>
-      <h1>Result 1 : {age}</h1>
-      <Demo1 age={age}/>
+      <Demo1 res={val}/>
     </div>
   )
 }

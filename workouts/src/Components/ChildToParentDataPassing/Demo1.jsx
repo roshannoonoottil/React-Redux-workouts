@@ -1,12 +1,11 @@
 import React from 'react'
 
-function Demo1({dataFromChild}) {
-    const values = 30
-    dataFromChild(values)
-
+function Demo1({childValue}) {
+  let value = 'Hi from Child'
+  childValue(value)
   return (
     <div>
-        <h1>child</h1>
+      
     </div>
   )
 }

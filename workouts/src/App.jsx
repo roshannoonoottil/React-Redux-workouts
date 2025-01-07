@@ -15,7 +15,7 @@ function App() {
       <Routes>
         <Route path="/" element={<UseState />} />
         <Route path="/useeffect" element={<UseEffect />} />
-        <Route path="/usecalback" element={<UseCallback />} />
+        <Route path="/usecallback" element={<UseCallback />} />
         <Route path="/usememo" element={<UseMemo />} />
         <Route path="/p2c" element={<PTCDP />} />
         <Route path="/c2p" element={<CTPDP />} />
